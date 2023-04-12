@@ -1,0 +1,6 @@
+html {
+    scroll-behavior: smooth;
+    }
+    .active {
+background-color: #7ec19d;
+}
