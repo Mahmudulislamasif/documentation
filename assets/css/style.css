@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 html {
     scroll-behavior: smooth;
+    }
+    body
+    {
+        font-family: 'Inter', sans-serif;
     }
 .active {
 background-color: #7ec19d;
@@ -14,6 +19,7 @@ background-color: #7ec19d;
     max-height: 500px;
      /* Change this value to adjust the maximum height of the submenu list */
   }
+
   .rotate-down {
     transform: rotate(180deg);
   }
