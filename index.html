@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="flex h-screen">
@@ -19,12 +19,23 @@
               </div>
               <ul class="py-4">
                 <li>
-                  <a href="#start" class="block px-6 py-2 text-sm font-medium text-white rounded-md p-2 active">Start</a>
+                  <a href="#start" class="px-6 py-2 text-sm font-medium text-white rounded-md p-2 active block">
+                    <span>Start</span>
+                  </a>
                 </li>
-                <li>
-                  <a href="#install" class="block px-6 py-2 text-sm font-medium text-white rounded-md p-2">Installation</a>
-                  <i class='bx bx-chevron-down'></i>
+                <li class="submenu">
+                  <a href="#install" class="px-6 py-2 text-sm font-medium text-white rounded-md p-2 flex justify-between items-center" onclick="toggleSubMenu()">
+                    <span>Installation</span>
+                    <i class='bx bx-chevron-down'></i>
+                  </a>
+                  <ul class="text-white ml-9 text-sm" id="submenu-list">
+                    <li><a href="#">Basic Information</a></li>
+                    <li><a href="#">Directories & File Uses</a></li>
+                    <li><a href="#">Still have a question?</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
                 </li>
+
                 <li>
                   <a href="#grid" class="block px-6 py-2 text-sm font-medium text-white rounded-md p-2">Grid</a>
                 </li>
@@ -61,6 +72,8 @@
           </div>
         </div>
     </div>
+    <script src="./assets/js/script.js"></script>
+    
 </body>
-<script src="./assets/js/script.js"></script>
+
 </html>

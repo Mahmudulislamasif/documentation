@@ -1,6 +1,20 @@
 html {
     scroll-behavior: smooth;
     }
-    .active {
+.active {
 background-color: #7ec19d;
 }
+#submenu-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+  }
+  
+  #submenu-list.show {
+    max-height: 500px;
+     /* Change this value to adjust the maximum height of the submenu list */
+  }
+
+  .rotate-down {
+    transform: rotate(180deg);
+  }
